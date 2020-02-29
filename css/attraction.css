@@ -1,0 +1,1237 @@
+/*--
+Author: CodeTechDevelopers Community
+Author URL: http://codetechdevelopers.com
+
+--*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    background: url(../images/banner.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -ms-background-attachment: fixed;
+
+}
+
+#about .welcome {
+    color: white;
+    font-weight: bold;
+    background: #15677A;
+    opacity: 0.6;
+    border-radius: 10px;
+    border: 1px white solid;
+}
+
+/*for check more button at the bottom of details*/
+#more {
+    margin-left: 35%;
+    margin-bottom: 2%;
+}
+
+#table {
+    height: 400px;
+}
+
+/* for attraction.php*/
+/*here for the select area*/
+.suggested b {
+
+    height: 40px;
+    width: 190px;
+
+    border-radius: 5px;
+}
+
+.suggested input[type="checkbox"] {
+    display: block;
+    margin-bottom: -6%;
+    cursor: pointer;
+}
+
+.suggested input[type="checkbox"]:checked ~ b {
+    background: lightblue;
+    color: black;
+    font-style: italic;
+}
+
+.suggested label {
+    background: lightblue;
+}
+
+.tablinks {
+    font-family: RabbitEars;
+    src: url(../fonts/RabbitEars.ttf);
+    font-weight: bold;
+}
+
+.suggested label {
+    margin-top: -2%
+    margin-left: 5px;
+    text-align: center;
+    cursor: pointer;
+    background: #15677A;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 200px;
+}
+
+.container-data {
+    margin-top: 10%;
+}
+
+#layer1 {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#view {
+    margin-left: 25%;
+    width: 150px;
+    text-align: center;
+}
+
+#about {
+    overflow: scroll;
+    margin-right: 2%;
+    margin-left: 2%;
+
+}
+
+#showsearch {
+    width: 100%;
+}
+
+#card {
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+#cardrow {
+    display: inline-block;
+    margin-top: 3px;
+}
+
+#photo {
+    margin-top: 3%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.layer2 {
+    margin-left: 0%;
+    margin-right: 0%;
+    text-indent: 2px;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px white solid;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.col-lg-5 {
+    -web-kit-overflow: scroll;
+}
+
+.row {
+    margin-top: 10%;
+}
+
+#search1 {
+    width: 300px;
+    display: inline-block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body a {
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+
+}
+
+body img {
+    max-width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    letter-spacing: .5px;
+}
+
+p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #666;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*-- header --*/
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 9;
+    height: 21%;
+    background: #15677A;
+    opacity: .8;
+}
+
+.container {
+    width: 100%;
+}
+
+.right-p li, .right-p li a {
+    display: inline-block;
+    color: #ddd;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.right-p li span {
+    color: #fff;
+}
+
+/*-- header --*/
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+#logo img, .footer-title img {
+    border-radius: 80%;
+    -webkit-border-radius: 80%;
+    -moz-border-radius: 80%;
+    -ms-border-radius: 80%;
+    -o-border-radius: 80%;
+    width: 60px;
+    height: 60px;
+}
+
+#logo {
+    margin-left: 1%;
+    width: 50%;
+}
+
+#logo a {
+    float: left;
+    font-size: .75em;
+    font-weight: 600;
+    display: initial;
+    margin: 0;
+    margin-left: -15%;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 0px 0;
+    border: none;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+#logo a span.fa {
+    color: #ff4f81;
+}
+
+/*for search area*/
+.form {
+    margin-left: 35%;
+}
+
+.row {
+    margin-top: 10px;
+}
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+nav ul {
+    float: right;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    margin-right: -400px;
+}
+
+/* Positioning the navigation items inline */
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+}
+
+.w3-content {
+    width: 500px;
+}
+
+.w3-content img {
+    height: 250px;
+    width: 400px;
+}
+
+/* Styling the links */
+nav a {
+    color: #ddd;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 10px 13px;
+    font-weight: 400;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+nav ul li ul li:hover {
+    background: #f8f9fa;
+}
+
+/* Background color change on Hover */
+nav a:hover {
+    color: #ddd;
+}
+
+.menu li.active a {
+    color: #fff;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 30px;
+    background: #fff;
+    padding: 10px;
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul li a {
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+}
+
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left: 170px;
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:only-child:after {
+    content: '';
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+@media all and (max-width: 500px) {
+    .toggle {
+        display: block;
+        padding: 5px 15px;
+        font-size: 20px;
+        text-decoration: none;
+        border: none;
+        opacity: 3;
+        float: left;
+        background-color: #3369e7;
+        color: #fff;
+        margin-bottom: 0;
+        margin-top: -50px;
+
+    }
+
+    nav ul {
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+    }
+
+    header h1 {
+        font-size: 25px;
+        display: inline-block;
+    }
+}
+
+@media all and (max-width: 400px) {
+
+    header {
+        height: 150px;
+    }
+
+    #layer1 {
+        margin-top: 20%;
+    }
+
+    #about {
+        margin-top: 3%;
+    }
+
+    #searching {
+        margin-top: 30%
+    }
+
+    .suggested label {
+        margin-left: 13%;
+        width: 250px;
+    }
+
+    .suggested h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .welcome {
+        color: white;
+        font-weight: bold;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        border: 1px white solid;
+    }
+
+    #search {
+        width: 250px;
+        display: inline-block;
+    }
+
+    nav ul {
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    .toggle {
+        display: block;
+        padding: 5px 15px;
+        font-size: 20px;
+        text-decoration: none;
+        border: none;
+        float: left;
+        background-color: #3369e7;
+        color: #fff;
+        margin-bottom: 0;
+        margin-top: -105px;
+    }
+}
+
+@media all and (max-width: 350px) {
+    .col-md-12 img {
+        height: 140px;
+    }
+
+    .toggle {
+        display: block;
+        padding: 5px 15px;
+        font-size: 20px;
+        text-decoration: none;
+        border: none;
+        float: left;
+        background-color: #3369e7;
+        color: #fff;
+        margin-bottom: 0;
+        margin-top: -100px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 500px,min-width:
+
+350px
+
+) {
+    header {
+        height: 250px;
+    }
+
+    .col-md-12 img {
+        height: 140px;
+    }
+
+    #about {
+        margin-top: 30%;
+    }
+
+    #searching {
+        margin-top: 30%;
+    }
+
+    #pro {
+        margin-top: 30%;
+    }
+
+    .toggle {
+        display: block;
+        position: fixed;
+        z-index: 2;
+        padding: 5px 15px;
+        font-size: 20px;
+        text-decoration: none;
+        border: none;
+        float: left;
+        background-color: #3369e7;
+        color: #fff;
+        margin-bottom: 0;
+        margin-top: -105px;
+    }
+}
+
+@media all and (max-width: 991px) {
+
+
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    .menu li.active a {
+        color: #3369e7;
+    }
+
+    nav ul li span {
+        color: #333;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav a {
+        color: #333;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        padding: 5px 15px;
+        font-size: 20px;
+        text-decoration: none;
+        border: none;
+        float: left;
+        background-color: #3369e7;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+    .menu .toggle {
+        float: none;
+        text-align: center;
+        margin: auto;
+        width: 30%;
+        padding: 5px;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .toggle:hover {
+        color: #333;
+        background-color: #fff;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+        margin-left: 0px;
+        display: block;
+        background: black;
+        color: white;
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li:hover {
+        background: blue;
+    }
+
+    nav ul li {
+        display: block;
+
+        width: 100%;
+        padding: 7px 0;
+    }
+
+    nav a {
+        padding: 5px 0;
+    }
+
+    nav a:hover {
+        color: #333;
+    }
+
+    .login-icon {
+        text-align: center;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: transparent;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #FFF;
+        font-size: 17px;
+    }
+
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: gray;
+        opacity: 9;
+    }
+
+    nav ul ul li a {
+        font-size: 15px;
+    }
+
+    ul.inner-ul {
+        padding: 0 !important;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+
+    }
+
+}
+
+@media all and (max-width: 330px) {
+
+    nav ul li {
+        display: block;
+        width: 94%;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    nav ul li :hover {
+        background: white;
+    }
+
+    @media (max-width: 1440px) {
+        .position-image img {
+            top: 23%;
+        }
+    }
+    @media (max-width: 1080px) {
+        .navbar-light .navbar-nav .nav-link {
+            padding: 0 0px 5px;
+        }
+
+        h3.b-w3ltxt {
+            font-size: 3em;
+        }
+
+        h4.b-w3ltxt {
+            font-size: 2.8em;
+        }
+
+        .banner-form-w3 h5 {
+            font-size: 17px;
+        }
+
+        .our-services-img {
+            margin-right: 8px;
+        }
+
+        .our-services-text h4 {
+            font-size: 17px;
+            letter-spacing: .5px;
+        }
+
+        .our-services-img img {
+            width: 62px;
+        }
+
+        .info h4 {
+            font-size: 18px;
+        }
+
+        .info img {
+            width: 42px;
+        }
+
+        .footer-grid_section {
+            width: 75%;
+        }
+
+        ul.links a, .copy-right p, .copy-right p a {
+            letter-spacing: 0.5px;
+        }
+
+        .banner-text-w3pvt {
+            padding: 15vw 0 15vw;
+        }
+
+        .banner-form-w3 {
+            padding: 15vw 0 0vw;
+        }
+
+        .padding {
+            padding: 2em;
+        }
+
+        nav a {
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+
+        #logo a {
+            font-size: .6em;
+        }
+
+        #logo img, .footer-title img {
+            margin-left: -20px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .footer-title a {
+            font-size: 28px;
+        }
+
+        .subscribe h3 {
+            font-size: 34px;
+        }
+    }
+    @media (max-width: 1024px) {
+
+        p.counter {
+            font-size: 2em;
+        }
+
+        .testi-info-text h4 {
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+    }
+    @media (max-width: 991px) {
+        .banner-text-w3pvt {
+            padding: 19vw 0 8vw;
+        }
+
+        .banner-form-w3 {
+            padding: 0vw 0 10vw;
+        }
+
+        .testi-info-text p {
+            padding: 1em 0em;
+            font-size: 14.5px;
+        }
+
+        .footer-grid_section {
+            width: 100%;
+        }
+
+        .links {
+            text-align: center;
+        }
+
+        .copy-right {
+            text-align: center;
+            margin-top: 10px
+        }
+
+        .subscribe form {
+            width: 90%;
+        }
+
+        .bottom-grids .col-md-3 {
+            padding: 0 5px;
+        }
+
+        .text-effect-wthree h5 {
+            font-size: 19px;
+        }
+
+        .team-grid {
+            padding: 5px;
+        }
+
+        .team-info h3 {
+            font-size: 1.2em;
+        }
+
+        .image {
+            width: 5%;
+        }
+    }
+    @media (max-width: 900px) {
+        .subscribe h3 {
+            font-size: 30px;
+        }
+
+        h2.heading {
+            font-size: 27px;
+        }
+
+        h3.heading {
+            font-size: 35px;
+        }
+    }
+    @media (max-width: 768px) {
+        #layer1 {
+            margin-top: 30%;
+        }
+
+        .subscribe h3 {
+            font-size: 30px;
+        }
+
+        .footer-title a {
+            font-size: 27px;
+        }
+
+        .testi-info-text h4 {
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        h3.heading {
+            font-size: 35px;
+        }
+
+        .w3layouts_stats_left i {
+            font-size: 20px;
+        }
+
+        .banner-text-w3pvt {
+            padding: 19vw 8vw 8vw;
+        }
+
+        .banner-form-w3 {
+            padding: 0vw 0vw 10vw 8vw;
+        }
+
+        .banner {
+            background: url(../images/banner.jpg) no-repeat -130px 0px;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            -ms-background-size: cover;
+            background-size: cover;
+        }
+    }
+    @media (max-width: 736px) {
+        #layer1 {
+            margin-top: 30%;
+        }
+
+        nav ul {
+            float: left;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+        }
+
+
+        h3.b-w3ltxt {
+            font-size: 2.8em;
+        }
+
+        h4.b-w3ltxt {
+            font-size: 2.5em;
+        }
+
+        .image {
+            width: 7%;
+        }
+
+        .img1 h3 {
+            font-size: 22px;
+        }
+
+        ul.callbacks_tabs {
+            position: absolute;
+            bottom: -25px;
+        }
+
+        .banner-text-w3pvt {
+            padding: 22vw 0vw 8vw;
+        }
+
+        .banner-form-w3 {
+            padding: 0vw 0vw 10vw;
+        }
+
+        .carousel-item p {
+            font-size: 14px;
+        }
+
+        .ser-img img {
+            width: 70px;
+        }
+
+        .team-grid {
+            padding: 0 15px;
+        }
+
+        h2.heading {
+            font-size: 23px;
+        }
+    }
+    @media (max-width: 667px) {
+        #layer1 {
+            margin-top: 30%;
+        }
+
+        h3.b-w3ltxt {
+            font-size: 2.5em;
+        }
+
+        h4.b-w3ltxt {
+            font-size: 2.2em;
+        }
+    }
+    @media (max-width: 568px) {
+        #layer1 {
+            margin-top: 30%;
+        }
+
+        .banner-text-w3pvt {
+            padding: 22vw 8vw 8vw;
+        }
+
+        .banner-form-w3 {
+            padding: 0vw 8vw 10vw 8vw;
+        }
+
+        .position-image img {
+            position: static;
+            width: auto;
+        }
+
+        .banner-bottom p {
+            font-size: 15px;
+        }
+
+        .subscribe h3 {
+            font-size: 25px;
+        }
+
+        ul.banner_slide_bg .container-fluid {
+            padding: 0;
+            margin-top: 35%;
+        }
+
+        .csslider > .navigation {
+            left: -1% !important;
+        }
+
+        .team-grid {
+            padding: 0 15px;
+            width: 50%;
+        }
+
+        .csslider > .navigation label, .csslider > .navigation label:after {
+            height: 4px !important;
+        }
+
+        .w3ls_banner_txt p {
+            font-size: 14px;
+        }
+    }
+    @media (max-width: 480px) {
+        .w3-content {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .w3-content img {
+            height: 200px;
+            width: 300px;
+        }
+
+
+        #VisaChipCardVideo {
+            height: 230px;
+            width: 200px;
+        }
+
+        .banner_slide_bg {
+            top: -60;
+            margin-top: -300px;
+        }
+
+        #light {
+            float: left;
+            height: 150px;
+            width: 200px;
+            display: none;
+            position: absolute;
+            top: 40%;
+            margin-left: -20%;
+            margin-top: -180px;
+            background: transparent;
+            z-index: 1002;
+            overflow: visible;
+        }
+
+        @media (max-width: 414px) {
+            h3 {
+                font-size: 13px;
+                font-weight: bold;
+            }
+
+            h4.b-w3ltxt {
+                font-size: 1.8em;
+                letter-spacing: 1px;
+            }
+
+            .navbar-toggler {
+                padding: 0.2rem 0.7rem;
+            }
+
+            .w3layouts_stats_left i {
+                font-size: 16px;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+            }
+
+            p.counter {
+                font-size: 2em;
+            }
+
+            .teamy {
+                width: 49.5%;
+            }
+
+            .teamy__name {
+                font-size: 1.2em;
+            }
+
+            .social {
+                width: 38px;
+                height: 38px;
+                margin: 2px;
+                font-size: 13px;
+            }
+
+            p.para-text-w3ls {
+                font-size: 13px;
+            }
+
+            .subscribe form input[type="email"] {
+                width: 85%;
+            }
+
+            .subscribe button.btn1 {
+                width: 15%;
+            }
+
+            ul.links a, .copy-right p, .copy-right p a {
+                font-size: 15px;
+            }
+
+            .image {
+                width: 20%;
+            }
+
+            .ser-img img {
+                width: 65px;
+            }
+
+            .copyright {
+                padding: 0 1em;
+            }
+
+            ul.links a, .copy-right p, .copy-right p a {
+                font-size: 14px;
+            }
+
+            .footer-title a {
+                font-size: 22px;
+            }
+
+            .subscribe h3 {
+                font-size: 22px;
+            }
+
+            .team-grid {
+                padding: 0 10px;
+            }
+
+            h3.heading {
+                font-size: 28px;
+            }
+
+            p.para-text-w3ls {
+                font-size: 14px;
+            }
+
+            h3.b-w3ltxt {
+                font-size: 2em;
+            }
+
+            h4.b-w3ltxt {
+                font-size: 1.8em;
+                letter-spacing: 1px;
+            }
+
+            #logo img, .footer-title img {
+                width: 60px;
+                height: 60px;
+            }
+
+            .section-stats .col-lg-3 {
+                padding: 0 7px;
+            }
+
+            nav ul li {
+                padding: 5px 0;
+            }
+
+            @media (max-width: 380px) {
+                h3 {
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+            }
